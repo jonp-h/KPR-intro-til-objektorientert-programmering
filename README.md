@@ -12,11 +12,11 @@ For det skal også sies at objektorientert tankegang kan oppleves som litt vansk
 
 ## Del 1: Installere JDK og VS Code
 
-For å kunne programmere i Java må du først installere Java Development Kit (JDK). Som vanlig kommer vi til å bruke VS Code som koderedigeringsverktøy i dette faget.
+For å kunne programmere i Java må du først installere Java Development Kit (JDK). Som vanlig kommer vi til å bruke VS Code som IDE i dette faget.
 
 ### Windows
 
-Det er flere aktører som har laget sin egen versjon av java, og det spiller ikke så stor roller hvilken dere installerer, så lenge det er Java 21 (siste Long Term Support (LTS))
+Det er flere som har laget sin egen versjon av java, og det spiller ikke så stor roller hvilken dere installerer, så lenge det er siste Java LTS versjon (Long Term Support).
 
 Her kan en godt bruke Adoptium sin Temurin JDK
 
@@ -42,22 +42,18 @@ Her kan en godt bruke Adoptium sin Temurin JDK
 
 Vi anbefaler at dere bruker Homebrew for installasjon av utviklingsverktøy på macOS. Dette er en "package manager" som lar deg laste ned programmer og lignende ved hjelp av enkle terminal-kommandoer, og sparer deg generelt for veldig mye jobb.
 
-Du kan åpne terminalen ved å søke etter "terminal".
+- Du kan åpne terminalen ved å søke etter "terminal".
 
-Du kan installere Java med denne kommandoen:
+- Du kan installere Java med denne kommandoen: `brew tap homebrew/cask-versions` og
+  `brew install --cask temurin21`
 
-`brew tap homebrew/cask-versions` og
-`brew install --cask temurin21`
+- Restart maskinen og sjekk at JAVA_HOME ble satt riktig med: `echo $JAVA_HOME` og `java -version`
 
-Restart maskinen og sjekk at JAVA_HOME ble satt riktig med:
-
-`echo $JAVA_HOME` og `java -version`
-
-Hvis begge kommandoene finner Java, har du installert JDK riktig.
+- Hvis begge kommandoene finner Java, har du installert JDK riktig.
 
 ### Linux
 
-Bruker du Linux klarer du nok å installere JDK uten detaljerte instruksjoner. Husk likevel å sjekke at JAVA_HOME blir riktig satt med kommandoen `echo $JAVA_HOME`.
+- Bruker du Linux klarer du nok å installere JDK uten detaljerte instruksjoner. Husk likevel å sjekke at JAVA_HOME blir riktig satt med kommandoen `echo $JAVA_HOME`.
 
 Lykke til! :)
 
@@ -101,11 +97,11 @@ Lykke til!
 
 - [Øving 1: Objekter, klasser, tilstand og oppførsel](./ovinger/oppgavetekster/oving1/README.md)
 
-# Feilsøking
+# Ekstra: Feilsøking
 
-### Force build instilling
+### Build failed
 
-En standardinnstilling for tilleggspakken Debugger for Java sjekker om hele prosjektet bygger feilfritt før man kjører koden. Dette er ikke alltid ønskelig i øvingsprosjektet, siden de fleste oppgavene ikke avhenger av andre. Hvis man ikke endrer denne innstillingen får man denne meldingen hver gang man prøver å kjøre noe kode dersom det er en feil hvor som helst i hele prosjektet:
+En standardinnstilling for tilleggspakken Debugger for Java sjekker om hele prosjektet bygger feilfritt før man kjører koden. Dette er ikke alltid ønskelig i øvingsopplegget, siden de fleste oppgavene ikke avhenger av andre. Hvis man ikke endrer denne innstillingen får man denne meldingen hver gang man prøver å kjøre noe kode dersom det er en feil i prosjektet:
 ![Forcebuild](/ovinger/oppgavetekster/md_bilder/ForceBuild.png)
 Så må man trykke Proceed for å kjøre koden, som vanligvis kjører helt fint (med mindre det faktisk er feil i den koden du vil kjøre).
 
@@ -115,7 +111,7 @@ For å skru av denne funksjonen, gjør følgende:
 2. Legg til denne linjen i settings.json:
    `"java.debug.settings.forceBuildBeforeLaunch": false`
 
-### Clean Java Language Server Workspace
+### Andre problemer
 
 1. Åpne command palette (Ctrl + Shift + P) og søk etter _Java: Clean Java Language Server Workspace_.
 2. Trykk deretter på _Reload and Delete_ (Det sletter ikke kode, bare konfigurasjons-filer)
