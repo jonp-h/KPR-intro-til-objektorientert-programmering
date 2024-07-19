@@ -12,7 +12,7 @@ For det skal også sies at objektorientert tankegang kan oppleves som litt vansk
 
 ## Del 1: Installere JDK og VS Code
 
-For å kunne programmere i Java må du først installere Java Development Kit (JDK). Som vanlig kommer vi til å bruke VS Code som IDE i dette faget.
+For å kunne programmere i Java må du først installere Java Development Kit (JDK). Som vanlig kommer vi til å bruke VS Code som IDE.
 
 ### Windows
 
