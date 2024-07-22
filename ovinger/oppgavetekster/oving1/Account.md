@@ -13,12 +13,12 @@ Begge verdiene skal være satt til `0.0` når klassen opprettes.
 - `addInterest()` - beregner rente og legger det til konto-beløpet
 - `getBalance()` - returnerer beløpet som er på kontoen
 - `getInterestRate()` - returnerer rentefoten
-- `setInterestRate(double)` - oppdaterer renten til å være den nye verdien
+- `setInterestRate(double)` - oppdaterer renten til å være den nye verdien (original verdi * rente / 100)
 
 ## Java-kode
 
 Skriv Java-kode for `Account`-klassen med oppførsel som er beskrevet over.
 
-Lag en passende `toString()`-metode og en `main`-metode, slik at du kan sjekke at oppførselen stemmer med tilstandsdiagrammet (bruk samme start-tilstand og sekvens av kall)
+Lag en passende `toString()`-metode og en `main`-metode, slik at du kan sjekke at oppførselen stemmer.
 
 Testkode for denne oppgaven finner du her: [src/test/java/oving1/AccountTest.java](../../src/test/java/oving1/AccountTest.java).
