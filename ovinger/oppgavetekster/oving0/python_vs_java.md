@@ -10,7 +10,7 @@ La oss starte med noe av det enkleste, å skrive ut en tekst til konsollen! 🎉
 
 ## Skrive ut tekst til konsollen
 
-I Python er det veldig greit å skrive ut tekst til konsollen. Du trenger bare å skrive `print("tekst")` og så vil teksten skrives ut til konsollen. I Java trengs det litt bokstaver:
+I Python er det veldig greit å skrive ut tekst til konsollen. Du trenger bare å skrive `print("tekst")` og så vil teksten skrives ut til konsollen. I Java trengs det litt flere bokstaver:
 
 ### Python
 
@@ -63,7 +63,7 @@ Nå skal du lage et program som ganger sammen to tall og skriver ut resultatet t
 - Lag en ny fil ved å høyreklikke på `src/main/java/oving0`-mappen og velg `New file...`. Gi filen et navn som slutter på `.java`, for eksempel `Oppgave1.java`. Når du trykker Enter vil du få opp den nye filen og noe forhåndsutfylt kode med noen valgalternativ:
   ![NyJavaFil](../md_bilder/NyJavaFil.png)
 - Velg `class`.
--
+- Vi skriver all koden vår inni denne classen.
 - For å kjøre kode i Java må man lage en `main`-metode. Denne ser slik ut:
 
 ```java
@@ -80,6 +80,8 @@ public static void main(String[] args) {
 - Lag en variabel som inneholder resultatet av gangeoperasjonen. Du kan kalle den `z` eller noe annet du vil.
 
 - Skriv ut resultatet til konsollen ved å bruke `System.out.println();`.
+
+- Når du trykker "kjør"-knappen oppe til høyre, åpnes terminalen og koden kjøres. Printer du ut tekst, vises dette i terminalvinduet.
 
 ## If-setninger
 
@@ -123,6 +125,8 @@ Viktige forskjeller å merke seg:
 - Python bruker `not` for å si at en betingelse skal være falsk, mens Java bruker `!`.
 
 - Java krever at betingelsene er omgitt av parenteser.
+
+***Fun fact:** Det som er flott er at de aller fleste kodespråk bruker disse symbolene for betingelser. Så dette er smart å lære seg!*
 
 ## Oppgave 2
 
