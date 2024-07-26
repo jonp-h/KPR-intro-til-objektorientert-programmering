@@ -95,7 +95,7 @@ Lykke til!
 
 - [Øving 0: Python vs Java](./ovinger/oppgavetekster/oving0/python_vs_java.md)
 
-- [Øving 1: Objekter, klasser, tilstand og oppførsel](./ovinger/oppgavetekster/oving1/README.md)
+- [Øving 1: Objekter, klasser, tilstand og oppførsel](./ovinger/oppgavetekster/oving1/)
 
 # Ekstra: Feilsøking
 
