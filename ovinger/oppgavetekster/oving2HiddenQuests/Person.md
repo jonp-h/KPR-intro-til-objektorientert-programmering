@@ -18,6 +18,28 @@ Et `Person`-objekt inneholder _navn_ (både fornavn og etternavn), _e-post_, _f�
 
 I tillegg til disse såkalte _setter_-metodene, så må `Person`-klassen ha tilsvarende _getter_-metoder.
 
+## Nyttig informasjon
+
+- [Innkapsling](https://www.w3schools.com/java/java_encapsulation.asp)
+- [String-klassen](https://www.w3schools.com/java/java_strings.asp)
+- **Gyldig tilstand**: Tilstanden til et objekt er verdien av alle attributtene. En viktig del av oppførselen til et objekt er å sikre at tilstanden til objektet alltid er gyldig, dvs. at alle attributtene har gyldige/konsistente verdier. Dette kan vi for eksempel gjøre ved å opprette en ekstra metode som sikrer at dataen er godkjent. Feks:
+
+  ```Java
+  String name;
+
+  void isValidName(String name) {
+      // sjekker gyldigheten til navnet, returnerer true hvis gyldig, false hvis ikke
+      // feks at strengen bare inneholder bokstaver
+  }
+
+  void setName(String name) {
+      if (! isValidName(name)) {
+          throw new IllegalArgumentException(... a suitable message ...);
+      }
+      this.name = name;
+  }
+  ```
+
 ## Java-kode
 
 Implementer `Person`-klassen med stram innkapsling. Eventuelle hjelpemetoder for validering bør også ha stram innkapsling. Det kan være lurt å lese om `String-klassen` og dens metoder før du setter i gang. [Her](https://www.w3schools.com/java/java_strings.asp) og [her](https://www.w3schools.com/java/java_ref_string.asp).

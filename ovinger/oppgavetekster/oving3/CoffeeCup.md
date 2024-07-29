@@ -21,6 +21,12 @@ I denne oppgaven blir en implementasjon av **CoffeeCup** sammen med et hovedprog
 
 CoffeeCup-koden finner du i [oving3/debugging/CoffeeCup.Java](../../src/main/java/oving3/debugging/CoffeeCup.java). CoffeeCupProgram finner du i [oving3/debugging/CoffeeCupProgram.java](../../src/main/java/oving3/debugging/CoffeeCupProgram.java).
 
+### Nyttig informasjon
+
+- **Debuggeren** er et verktøy som brukes til å analysere kjørende kode, noe som kan være svært nyttig når man vil forstå og evt. rette feil i et program. Dere har brukt debuggeren tidligere i Python-opplegget, og det fungerer tilsvarende helt likt i Java. Lag et breakpoint og start debugging, for så å gå stegvis gjennom koden. Variabler får dere i et vindu oppe til venstre. [Her](https://code.visualstudio.com/Docs/editor/debugging) finner dere mer informasjon dere kan raskt skumme gjennom, hvis dere har glemt det.
+- **Hovedprogramklasser** er klasser som aktiveres når programmer starter opp og som initialiserer og kontrollerer/koordinerer de andre objekter i applikasjonen. Med andre ord en hovedprogramklasse som "starter" selve programmet, og kaller andre metoder som utfører logikken. Hovedprogramklassen må slik inneholde en metode som kjøres når koden starter; I enkle java-programmer er denne metoden `public static void main(String[] args)`.
+- [java.util.Random](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) - En pseudotilfeldig nummergenerator i Java.
+
 ### Del 1
 
 Målet for oppgaven er å finne en feil i funksjonen `part1()` ved hjelp av debuggeren i VSCode. Kjør hovedprogrammet i debug-modus, og bruk dette til å finne hva kapasiteten og nåværende volum av kaffe er like før programmet utløser et unntak.
