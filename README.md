@@ -31,7 +31,7 @@ Her kan en godt bruke Adoptium sin Temurin JDK
 8. Sjekk om JDK har blitt installert riktig ved å kjøre:
    - Windows:
      - CMD:
-       - `echo %JAVA_HOME`
+       - `echo %JAVA_HOME%`
      - Powershell:
        - `echo $Env:JAVA_HOME`
    - MAC / OSX / Linux
