@@ -126,7 +126,7 @@ Viktige forskjeller å merke seg:
 
 - Java krever at betingelsene er omgitt av parenteser.
 
-***Fun fact:** Det som er flott er at de aller fleste kodespråk bruker disse symbolene for betingelser. Så dette er smart å lære seg!*
+**\*Fun fact:** Det som er flott er at de aller fleste kodespråk bruker disse symbolene for betingelser. Så dette er smart å lære seg!\*
 
 ## Oppgave 2
 
@@ -231,7 +231,7 @@ public int funksjonsnavn(int parameter1, int parameter2) {
 
 De fleste funskjoner man lager i Java hører til en gitt **klasse** (ikke tenk på hva dette er akkurat nå, dette lærer dere snart). Funksjoner som hører til klasser kalles **metoder**.
 
-En metode i Java har alltid en **return-type**. Return-type er typen variabelen som skal returneres fra metoden. Return-type kan være `void`, `int`, `double`, `float`, `String` eller en annen type. Hvis return-type er `void` betyr det at metoden ikke skal returnere noe. Alle parametre som skal sendes til metoden må ha en **type**. Typen til parametrene kan være `int`, `double`, `float`, `String` eller en annen type. For nå kan du ignorere at det står `public` foran metoden, dette lærer du om snart.
+En metode i Java har alltid en **return-type**. Return-type er typen som skal returneres fra metoden. Return-type kan være `void`, `int`, `double`, `float`, `String` eller en annen type. Hvis return-type er `void` betyr det at metoden ikke skal returnere noe. Alle parametre som skal sendes til metoden må ha en **type**. Typen til parametrene kan være `int`, `double`, `float`, `String` eller en annen type. For nå kan du ignorere at det står `public` foran metoden, dette lærer du om snart.
 
 Alle funksjoner (metoder) i Java må ligge inni en klasse.
 
@@ -255,6 +255,8 @@ public class KlasseNavn {
 ## Oppgave 4
 
 Enten lag en ny klasse (fil), eller bruk den samme som i tidligere oppgaver. Lag metoder som tilsvarer funksjonene i Python-koden under:
+
+Du trenger ikke å teste funksjonene, hvordan det gjøres skal vi se nærmere på senere.
 
 #### Python
 
