@@ -36,9 +36,12 @@ Her kan en godt bruke Adoptium sin Temurin JDK
        - `echo $Env:JAVA_HOME`
    - MAC / OSX / Linux
      - `echo $JAVA_HOME`
-Windows Eksempel:
-`C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\`
-9. Sjekk også at Java er installert ved å kjøre `java -version` i samme terminal
+
+   Eksempel:   
+   `C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\`
+
+
+10. Sjekk også at Java er installert ved å kjøre `java -version` i samme terminal
 
 ### Mac / OSX
 
